@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Create Next App</title>
         <meta
@@ -14,16 +15,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-      </main>
+      <body>
+        <header>
+          {/* <Image src="" alt="" /> */}
+          <div>
+            <h1>La próxima revolución en el intercambio de criptomonedas</h1>
+            <p>
+              Batatabit te ayuda a navegar entre los diferentes precios y
+              tendencias
+            </p>
+            <Link href="/">
+              <a>
+                Conoce nuestros planes <span>i</span>
+              </a>
+            </Link>
+          </div>
+        </header>
 
-      <footer>
-        
-      </footer>
+        <main>
+          <section></section>
+          <section></section>
+          <section></section>
+          <section></section>
+        </main>
+
+        <footer></footer>
+      </body>
     </div>
   );
 }
